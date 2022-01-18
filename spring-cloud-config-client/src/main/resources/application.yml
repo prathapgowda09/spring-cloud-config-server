@@ -1,0 +1,15 @@
+db:
+  url: http://localhost:3306
+  host: 123.0.1.2
+  port: 3306
+  
+  
+my:
+  greeting: Hello World
+  
+spring:
+  config:
+    import: "optional:configserver:http://localhost:8888"
+    
+    
+management.endpoints.web.exposure.include : "*"
